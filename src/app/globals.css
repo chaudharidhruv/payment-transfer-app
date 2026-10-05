@@ -1,0 +1,43 @@
+/* src/app/globals.css */
+
+/* — Tailwind v4 import — */
+@import "tailwindcss";
+
+/* — LIGHT THEME VARIABLES (unchanged!) — */
+:root {
+  --bg-page:        #f8fafc;
+  --bg-card:        #ffffff;
+  --text-primary:   #1f2937;
+  --text-secondary: #4b5563;
+  --accent:         #2563eb;
+  --accent-hover:   #1d4ed8;
+  --border:         #e5e7eb;
+}
+
+/* — DARK THEME VARIABLES (softer than pure black) — */
+:root.dark {
+  --bg-page:        #121212;   /* very-dark gray, not pure black */
+  --bg-card:        #1e1e1e;   /* slightly lighter card background */
+  --text-primary:   #f9fafc;   /* off-white */
+  --text-secondary: #9ca3af;   /* muted gray */
+  --accent:         #2563eb;   /* same light-blue accent */
+  --accent-hover:   #1d4ed8;   /* same hover shade */
+  --border:         #2c2c2c;   /* subtle dark border */
+}
+
+/* — no OS-prefers block — */
+
+body {
+  background: var(--bg-page);
+  color: var(--text-primary);
+  font-family: Arial, Helvetica, sans-serif;
+  scroll-behavior: smooth;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
